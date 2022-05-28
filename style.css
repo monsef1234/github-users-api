@@ -1,0 +1,110 @@
+:root {
+  --color1: #252a64;
+  --color2: #3e2870;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color1);
+  min-height: 100vh;
+}
+img {
+  display: block;
+  /* object-fit: cover; */
+  object-position: center center;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 1rem !important;
+  transition: 0.5s;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: 800px;
+  margin: 0 1rem;
+}
+.container .input {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.4);
+}
+.container .input input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--color2);
+  color: white;
+  font-size: 1rem;
+}
+.container .input input::placeholder {
+  color: gray;
+}
+.container .card {
+  display: flex;
+  align-items: center;
+  background-color: var(--color2);
+  margin-top: 1.5rem;
+  padding: 3rem 2rem;
+  gap: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.4);
+}
+.container .card .img {
+  align-self: flex-start;
+}
+.container .card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 8px solid var(--color1);
+}
+.container .card .info {
+  padding-right: 3rem;
+}
+.container .card p {
+  margin: 1rem 0;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.container .card .static {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin: 1rem 0;
+}
+.container .card .last-repo {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.container .card .last-repo a {
+  display: block;
+  background-color: var(--color1);
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+.error {
+  width: 100%;
+  text-align: center;
+  background: var(--color2);
+  margin: 2rem 0 0;
+  padding: 2rem;
+  border-radius: 1rem;
+}
