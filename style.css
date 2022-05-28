@@ -108,3 +108,29 @@ a:hover {
   padding: 2rem;
   border-radius: 1rem;
 }
+/* Media Query */
+@media screen and (max-width: 570px) {
+  .container .card {
+    flex-direction: column;
+    margin-top: 1.5rem;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+  }
+  .container .card .img {
+    align-self: auto;
+  }
+  .container .card img {
+    width: 140px;
+    height: 140px;
+  }
+  .container .card .info {
+    text-align: center;
+    padding: 0;
+  }
+  .container .card .static {
+    justify-content: center;
+  }
+  .container .card .last-repo {
+    justify-content: center;
+  }
+}
